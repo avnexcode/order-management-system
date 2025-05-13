@@ -21,7 +21,6 @@ import { cn } from "@/lib/utils";
 import { convertCurrency } from "@/utils";
 import { api } from "@/utils/api";
 import { renderElements } from "@/utils/render-elements";
-import { type OrderCategory } from "@prisma/client";
 import { Loader2 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useFormContext, type FieldValues, type Path } from "react-hook-form";

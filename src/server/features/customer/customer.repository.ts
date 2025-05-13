@@ -64,6 +64,11 @@ export class CustomerRepository {
     return customer;
   };
 
+  static countAll = async () => {
+    const customersCount = await db.customer.count();
+    return customersCount;
+  };
+
   static countUniqueId = async (id: string) => {
     const customerCount = await db.customer.count({ where: { id } });
 

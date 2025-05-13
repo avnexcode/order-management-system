@@ -126,6 +126,11 @@ export class OrderRepository {
     return order;
   };
 
+  static countAll = async () => {
+    const ordersCount = await db.order.count();
+    return ordersCount;
+  };
+
   static countUniqueId = async (id: string) => {
     const orderCount = await db.order.count({ where: { id } });
 

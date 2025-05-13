@@ -27,6 +27,11 @@ export class CategoryService {
     return category;
   };
 
+  static countAll = async () => {
+    const categoriesCount = await CategoryRepository.countAll();
+    return categoriesCount;
+  };
+
   static create = async (request: CreateCategoryRequest) => {
     const existingCategory = await CategoryRepository.countUniqueName(
       request.name,

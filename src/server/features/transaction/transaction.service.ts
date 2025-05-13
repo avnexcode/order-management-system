@@ -39,6 +39,11 @@ export class TransactionService {
     return transaction;
   };
 
+  static countAll = async () => {
+    const transactionsCount = await TransactionRepository.countAll();
+    return transactionsCount;
+  };
+
   static create = async (request: CreateTransactionRequest) => {
     const transaction = await TransactionRepository.insert(request);
 

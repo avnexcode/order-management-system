@@ -77,51 +77,51 @@ export const sidebarMenu: SidebarMenuType[] = [
           "/dashboard/payment-record/:id/detail",
         ],
       },
-      {
-        type: "Collapsible",
-        title: "Test",
-        icon: "TestTubeDiagonal",
-        active: [""],
-        subMenu: [
-          {
-            title: "Test 1",
-            url: "#",
-            icon: "TestTubeDiagonal",
-            active: [""],
-          },
-          {
-            title: "Test 2",
-            url: "#",
-            icon: "TestTubeDiagonal",
-            active: [""],
-          },
-          {
-            title: "Test 3",
-            url: "#",
-            icon: "TestTubeDiagonal",
-            active: [""],
-          },
-        ],
-      },
+      // {
+      //   type: "Collapsible",
+      //   title: "Test",
+      //   icon: "TestTubeDiagonal",
+      //   active: [""],
+      //   subMenu: [
+      //     {
+      //       title: "Test 1",
+      //       url: "#",
+      //       icon: "TestTubeDiagonal",
+      //       active: [""],
+      //     },
+      //     {
+      //       title: "Test 2",
+      //       url: "#",
+      //       icon: "TestTubeDiagonal",
+      //       active: [""],
+      //     },
+      //     {
+      //       title: "Test 3",
+      //       url: "#",
+      //       icon: "TestTubeDiagonal",
+      //       active: [""],
+      //     },
+      //   ],
+      // },
     ],
   },
   {
     label: "Settings",
     menu: [
-      {
-        type: "Single",
-        title: "Profile",
-        url: "settings/profile",
-        icon: "User",
-        active: [""],
-      },
-      {
-        type: "Single",
-        title: "Reset Password",
-        url: "/settings/reset-password",
-        icon: "KeyRound",
-        active: [""],
-      },
+      // {
+      //   type: "Single",
+      //   title: "Profile",
+      //   url: "settings/profile",
+      //   icon: "User",
+      //   active: [""],
+      // },
+      // {
+      //   type: "Single",
+      //   title: "Reset Password",
+      //   url: "/settings/reset-password",
+      //   icon: "KeyRound",
+      //   active: [""],
+      // },
       {
         type: "Single",
         title: "Pengguna",

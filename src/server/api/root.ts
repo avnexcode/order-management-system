@@ -8,6 +8,7 @@ import {
   paymentRecordRouter,
   authRouter,
   userRouter,
+  statsRouter,
 } from "./routers";
 
 /**
@@ -24,6 +25,7 @@ export const appRouter = createTRPCRouter({
   paymentRecord: paymentRecordRouter,
   auth: authRouter,
   user: userRouter,
+  stats: statsRouter,
 });
 
 // export type definition of API

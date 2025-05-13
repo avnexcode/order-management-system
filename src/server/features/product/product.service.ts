@@ -27,6 +27,11 @@ export class ProductService {
     return product;
   };
 
+  static countAll = async () => {
+    const productsCount = await ProductRepository.countAll();
+    return productsCount;
+  };
+
   static create = async (request: CreateProductRequest) => {
     let slug = generateSlug(request.name);
 

@@ -25,6 +25,11 @@ export class OrderService {
     return order;
   };
 
+  static countAll = async () => {
+    const ordersCount = await OrderRepository.countAll();
+    return ordersCount;
+  };
+
   static create = async (request: CreateOrderRequest) => {
     const existingOrder = await OrderRepository.countUniqueLabel(request.label);
 

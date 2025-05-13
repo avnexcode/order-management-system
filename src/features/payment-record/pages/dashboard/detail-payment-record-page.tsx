@@ -40,7 +40,7 @@ export const DetailPaymentRecordPage = ({
       <SectionContainer padded>
         <DashboardSection
           title="Dashboard - Detail Riwayat Pembayaran"
-          description="ASD"
+          description="Halaman ini menampilkan daftar riwayat pembayaran yang telah dilakukan oleh pelanggan. Informasi yang tersedia meliputi ID transaksi, tanggal pembayaran, jumlah yang dibayarkan, dan bukti pembayaran."
         >
           {isPaymentRecordLoading ? (
             <PaymentRecordCardSkeleton />

@@ -68,6 +68,11 @@ export class CategoryRepository {
     return category;
   };
 
+  static countAll = async () => {
+    const categoriesCount = await db.category.count();
+    return categoriesCount;
+  };
+
   static countUniqueId = async (id: string) => {
     const categoryCount = await db.category.count({ where: { id } });
 

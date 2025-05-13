@@ -25,6 +25,11 @@ export class CustomerService {
     return customer;
   };
 
+  static countAll = async () => {
+    const customersCount = await CustomerRepository.countAll();
+    return customersCount;
+  };
+
   static create = async (request: CreateCustomerRequest) => {
     if (request.email) {
       const customerExistsByEmail = await CustomerRepository.countUniqueEmail(

@@ -79,6 +79,11 @@ export class ProductRepository {
     return product;
   };
 
+  static countAll = async () => {
+    const productsCount = await db.product.count();
+    return productsCount;
+  };
+
   static countUniqueId = async (id: string) => {
     const productCount = await db.product.count({ where: { id } });
 

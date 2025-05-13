@@ -99,7 +99,7 @@ export const CreatePaymentRecordForm = ({
           </Button>
         )}
       </DialogTrigger>
-      <DialogContent className="max-w-2xl">
+      <DialogContent className="max-h-screen max-w-2xl overflow-auto">
         <DialogHeader>
           <DialogTitle>Apakah kamu sudah benar - benar yakin?</DialogTitle>
           <DialogDescription>

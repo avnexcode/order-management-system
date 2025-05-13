@@ -93,6 +93,11 @@ export class TransactionRepository {
     return transaction;
   };
 
+  static countAll = async () => {
+    const transactionsCount = await db.transaction.count();
+    return transactionsCount;
+  };
+
   static countUniqueId = async (id: string) => {
     const countTransaction = await db.transaction.count({ where: { id } });
 
