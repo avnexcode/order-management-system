@@ -33,12 +33,12 @@ export const DashboardBadge = ({
         {isLoading ? (
           <Skeleton className="h-4 w-full" />
         ) : (
-          <p>Total : {props.stats?.length}</p>
+          <p>Total : {props.stats?.length + " " + props.title} </p>
         )}
       </CardContent>
-      <CardFooter>
+      {/* <CardFooter>
         <p>Card Footer</p>
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   );
 };
