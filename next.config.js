@@ -24,7 +24,7 @@ const config = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "bhigfselpfdwppgkypag.supabase.co",
+        hostname: "mzaevupoirlbpehayhsp.supabase.co",
         port: "",
         pathname: "/storage/v1/object/public/**",
       },
